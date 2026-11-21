@@ -1,0 +1,6 @@
+{
+  "name": "AZKOYEN INVEST",
+  "description": "Plataforma institucional de investimentos digitais com carteira USD, pools de capital compartilhado, operações manuais auditadas e motor contábil de partidas dobradas.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

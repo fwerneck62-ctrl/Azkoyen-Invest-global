@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-sans: 'DM Sans', system-ui, -apple-system, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --az-obsidian: #060609;
+    --az-carbon: #0B0C12;
+    --az-gunmetal: #11131B;
+    --az-steel: #181B26;
+    --az-crimson: #E11D2E;
+    --az-crimson-bright: #FF2438;
+    --az-crimson-deep: #9F1220;
+    --az-emerald: #10B981;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--az-obsidian);
+    color: #F1F3F5;
+    letter-spacing: 0.005em;
+  }
+
+  h1, h2, h3, h4, .font-display {
+    font-family: var(--font-display);
+    text-wrap: balance;
+  }
+
+  .font-mono, .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Custom sleek obsidian scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #08090D;
+}
+::-webkit-scrollbar-thumb {
+  background: #232736;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E11D2E;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
